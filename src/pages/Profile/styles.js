@@ -42,6 +42,7 @@ export const EditProfileContainer = styled.main`
         width: 150px;
         height: 150px;
         margin: 0 0 20px 0;
+        border-radius: 50%;
       }
     }
 
