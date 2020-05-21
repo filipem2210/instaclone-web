@@ -34,13 +34,14 @@ export const SignUpContainer = styled.main`
       font-style: normal;
     }
 
-    .avatar_preview{
+    .profile-image-preview{
       width: 100%;
 
       img{
         width: 150px;
         height: 150px;
         margin: 0 0 20px 0;
+        border-radius: 50%;
       }
     }
 

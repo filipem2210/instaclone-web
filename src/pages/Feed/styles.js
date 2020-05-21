@@ -30,7 +30,7 @@ export const PostHeader = styled.header`
     display: flex;
     flex-direction: row;
 
-    .avatar{
+    .profile-image{
       width: 32px;
       height: 32px;
 

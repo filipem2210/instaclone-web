@@ -22,15 +22,15 @@ const validationSchema = Yup.object().shape({
 export default function SignUp() {
   const history = useHistory();
 
-  const [avatar, setAvatar] = useState(null);
-  const [avatarPreview, setAvatarPreview] = useState(null);
+  const [profileImage, setProfileImage] = useState(null);
+  const [profileImagePreview, setProfileImagePreview] = useState(null);
   const [username, setUsername] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
   useEffect(() => {
     api.get('/me').then(response => {
-      setAvatar(response.data.avatar);
+      setProfileImage(response.data.avatar);
       setUsername(response.data.username);
       setName(response.data.name);
       setEmail(response.data.email);
@@ -40,7 +40,7 @@ export default function SignUp() {
   async function handleEditProfile(values) {
     const data = new FormData();
 
-    data.append('avatar', avatar);
+    data.append('avatar', profileImage);
     data.append('username', values.username);
     data.append('name', values.name);
     data.append('email', values.email);
@@ -55,10 +55,10 @@ export default function SignUp() {
     }
   };
 
-  function handleAvatarChange(e) {
+  function handleProfileImageChange(e) {
     if (e.target.files[0]) {
-      setAvatar(e.target.files[0]);
-      setAvatarPreview(URL.createObjectURL(e.target.files[0]));
+      setProfileImage(e.target.files[0]);
+      setProfileImagePreview(URL.createObjectURL(e.target.files[0]));
     }
   }
 
@@ -90,24 +90,24 @@ export default function SignUp() {
         >
           {(props) => (
             <Form>
-              <div className="avatar_preview">
-                {!avatarPreview ? (
+              <div className="profile-image-preview">
+                {!profileImagePreview ? (
                   <img
-                    src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${avatar ? avatar : 'avatar.jpg'}`}
-                    alt="Profile avatar"
+                    src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${profileImage ? profileImage : 'avatar.jpg'}`}
+                    alt="Profile img preview"
                   />
                 ) : (
-                    <img src={avatarPreview} alt="Avatar preview" />
+                    <img src={profileImagePreview} alt="Profile img preview" />
                   )
                 }
               </div>
 
-              <label htmlFor="edit_avatar"><TiUpload size={18} color="#fff" />Editar avatar</label>
+              <label htmlFor="edit-profile-image"><TiUpload size={18} color="#fff" />Editar imagem de perfil</label>
 
               <input
-                id="edit_avatar"
+                id="edit-profile-image"
                 type="file"
-                onChange={handleAvatarChange}
+                onChange={handleProfileImageChange}
               />
 
               <Field name="username" placeholder="Nome de usuário" />

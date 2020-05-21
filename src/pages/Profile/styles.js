@@ -33,7 +33,7 @@ export const EditProfileContainer = styled.main`
       font-style: normal;
     }
 
-    .avatar_preview{
+    .profile-image-preview{
       width: 100%;
       display: flex;
       justify-content: center;

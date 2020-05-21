@@ -28,13 +28,13 @@ export default function SignUp() {
   const history = useHistory();
   if (isAuthenticated()) history.push('/');
 
-  const [avatar, setAvatar] = useState(null);
-  const [avatarPreview, setAvatarPreview] = useState(null);
+  const [profileImage, setProfileImage] = useState(null);
+  const [profileImagePreview, setProfileImagePreview] = useState(null);
 
   async function handleSignUp(values) {
     const data = new FormData();
 
-    data.append('avatar', avatar);
+    data.append('avatar', profileImage);
     data.append('username', values.username);
     data.append('name', values.name);
     data.append('email', values.email);
@@ -53,10 +53,10 @@ export default function SignUp() {
     }
   };
 
-  function handleAvatarChange(e) {
+  function handleProfileImageChange(e) {
     if (e.target.files[0]) {
-      setAvatar(e.target.files[0]);
-      setAvatarPreview(URL.createObjectURL(e.target.files[0]));
+      setProfileImage(e.target.files[0]);
+      setProfileImagePreview(URL.createObjectURL(e.target.files[0]));
     }
   }
 
@@ -83,19 +83,18 @@ export default function SignUp() {
 
             <h2>Cadastre-se para ver fotos e vídeos dos seus amigos.</h2>
 
-            {avatar &&
-              <div className="avatar_preview">
-                <img src={avatarPreview} alt="Avatar preview" />
+            {profileImage &&
+              <div className="profile-image-preview">
+                <img src={profileImagePreview} alt="Profile img preview" />
               </div>
             }
 
-            <label htmlFor="select_avatar"><TiUpload size={18} color="#fff" />{!avatar ? 'Selecione um avatar' : 'Editar'}</label>
+            <label htmlFor="select-profile-image"><TiUpload size={18} color="#fff" />{!profileImage ? 'Selecione uma imagem de perfil' : 'Editar imagem de perfil'}</label>
 
             <input
-              id="select_avatar"
-              name="avatar"
+              id="select-profile-image"
               type="file"
-              onChange={handleAvatarChange}
+              onChange={handleProfileImageChange}
             />
 
             <Field name="username" placeholder="Nome de usuário" />

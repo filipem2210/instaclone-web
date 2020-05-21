@@ -9,11 +9,11 @@ import logo from '../../assets/instagram-logo-small.png';
 import camera from '../../assets/camera.svg';
 
 export default function Header() {
-  const [avatar, setAvatar] = useState(null);
+  const [profileImage, setProfileImage] = useState(null);
 
   useEffect(() => {
     api.get('/me').then(response => {
-      setAvatar(response.data.avatar);
+      setProfileImage(response.data.avatar);
     });
   }, [])
 
@@ -29,8 +29,8 @@ export default function Header() {
           </Link>
           <Link to="/profile">
             <img
-              src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${avatar ? avatar : 'avatar.jpg'}`}
-              alt="Profile avatar"
+              src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${profileImage ? profileImage : 'avatar.jpg'}`}
+              alt="Profile img"
             />
           </Link>
         </div>

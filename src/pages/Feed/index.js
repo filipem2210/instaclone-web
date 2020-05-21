@@ -75,7 +75,7 @@ export default function Feed() {
 
             <PostHeader>
               <div className="post-info">
-                <div className="avatar">
+                <div className="profile-image">
                   <Link to='/'>
                     <img src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${post.user.avatar}`} alt="Imagem" />
                   </Link>
