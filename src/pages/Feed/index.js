@@ -41,7 +41,7 @@ export default function Feed() {
   }
 
   const registerToSocket = useCallback(() => {
-    const socket = io('http://localhost:3333');
+    const socket = io(process.env.REACT_APP_SOCKET_IO_URL);
 
     socket.on('post', newPost => {
       setFeed(prevFeed => {
