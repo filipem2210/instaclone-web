@@ -54,7 +54,7 @@ export default function EditPost() {
         <h1>Editar Post</h1>
 
         {image &&
-          <img src={`http://localhost:3333/api/static/images/post/${image}`} alt="Post preview" />
+          <img src={`${process.env.REACT_APP_API_URL}/static/images/post/${image}`} alt="Post preview" />
         }
 
         <Formik

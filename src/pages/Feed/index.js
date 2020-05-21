@@ -77,7 +77,7 @@ export default function Feed() {
               <div className="post-info">
                 <div className="avatar">
                   <Link to='/'>
-                    <img src={`http://localhost:3333/api/static/images/avatar/${post.user.avatar}`} alt="Imagem" />
+                    <img src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${post.user.avatar}`} alt="Imagem" />
                   </Link>
                 </div>
                 <div className="username-place">
@@ -109,7 +109,7 @@ export default function Feed() {
               </div>
             </PostHeader>
 
-            <img src={`http://localhost:3333/api/static/images/post/${post.image}`} alt="Imagem" />
+            <img src={`${process.env.REACT_APP_API_URL}/static/images/post/${post.image}`} alt="Imagem" />
 
             <PostFooter>
               <div className="actions">

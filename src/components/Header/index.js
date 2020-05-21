@@ -29,7 +29,7 @@ export default function Header() {
           </Link>
           <Link to="/profile">
             <img
-              src={`http://localhost:3333/api/static/images/avatar/${avatar ? avatar : 'avatar.jpg'}`}
+              src={`${process.env.REACT_APP_API_URL}/static/images/avatar/${avatar ? avatar : 'avatar.jpg'}`}
               alt="Profile avatar"
             />
           </Link>
