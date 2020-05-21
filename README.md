@@ -7,6 +7,7 @@
 * [ReactJS](https://reactjs.org/)
 * [Axios](https://www.npmjs.com/package/axios)
 * [Formik](https://www.npmjs.com/package/formik)
+* [Google Analytics](https://analytics.google.com/analytics/web/)
 * [React Icons](https://www.npmjs.com/package/react-icons)
 * [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 * [React Toastify](https://www.npmjs.com/package/react-toastify)
