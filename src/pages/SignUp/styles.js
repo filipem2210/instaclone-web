@@ -26,7 +26,7 @@ export const SignUpContainer = styled.main`
 
     h2{
       color: #8e8e8e;
-      font-size: 17px;
+      font-size: 1.0625rem;
       font-weight: 500;
       line-height: 20px;
       margin-bottom: 15px;
@@ -51,7 +51,7 @@ export const SignUpContainer = styled.main`
 
     label {
       padding: 10px;
-      font-size: 15px;
+      font-size: 0,9375‬rem;
       border-radius: 3px;
       cursor: pointer;
       background-color: #0095f6;
@@ -73,7 +73,7 @@ export const SignUpContainer = styled.main`
       border-radius: 4px;
       border: 1px solid #ddd;
       padding: 0 20px;
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     button {
@@ -82,7 +82,7 @@ export const SignUpContainer = styled.main`
       border: 0;
       background: #0095f6;
       color: #FFF;
-      font-size: 14px;
+      font-size: 0.875rem;
       cursor: pointer;
       margin-top: 10px;
 

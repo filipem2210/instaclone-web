@@ -31,7 +31,7 @@ export const NewPostContainer = styled.main`
 
     label {
       padding: 10px;
-      font-size: 15px;
+      font-size: 0,9375‬rem;
       border-radius: 3px;
       cursor: pointer;
       background-color: #0095f6;
@@ -53,7 +53,7 @@ export const NewPostContainer = styled.main`
       border-radius: 4px;
       border: 1px solid #ddd;
       padding: 0 20px;
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     .hashtags{
@@ -66,7 +66,7 @@ export const NewPostContainer = styled.main`
       border: 0;
       background: #0095f6;
       color: #FFF;
-      font-size: 14px;
+      font-size: 0.875rem;
       cursor: pointer;
       margin-top: 10px;
 

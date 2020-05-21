@@ -28,7 +28,7 @@ export const EditPostContainer = styled.main`
       border-radius: 4px;
       border: 1px solid #ddd;
       padding: 0 20px;
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     .hashtags{
@@ -41,7 +41,7 @@ export const EditPostContainer = styled.main`
       border: 0;
       background: #0095f6;
       color: #fff;
-      font-size: 14px;
+      font-size: 0.875rem;
       cursor: pointer;
       margin-top: 10px;
 

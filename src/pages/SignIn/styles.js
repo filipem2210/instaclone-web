@@ -30,7 +30,7 @@ export const SignInContainer = styled.main`
       border-radius: 4px;
       border: 1px solid #ddd;
       padding: 0 20px;
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     button {
@@ -39,7 +39,7 @@ export const SignInContainer = styled.main`
       border: 0;
       background: #0095f6;
       color: #FFF;
-      font-size: 14px;
+      font-size: 0.875rem;
       cursor: pointer;
       margin-top: 10px;
 

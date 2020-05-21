@@ -54,7 +54,7 @@ export const PostHeader = styled.header`
       justify-content: center;
 
       .username{
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 18px;
         color: #262626;
         font-weight: 600;
@@ -63,7 +63,7 @@ export const PostHeader = styled.header`
       }
 
       .place{
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #666;
         font-weight: 400;
         line-height: 15px;
@@ -128,7 +128,7 @@ export const PostFooter = styled.footer`
   }
 
   p{
-    font-size: 13px;
+    font-size: 0.8125rem;
     margin-top: 10px;
     line-height: 18px;
 
@@ -150,7 +150,7 @@ export const PostComments = styled.section`
 
     textarea{
       border: 0;
-      font-size: 14px;
+      font-size: 0.875rem;
       resize: none;
       max-height: 60px;
       display: flex;
