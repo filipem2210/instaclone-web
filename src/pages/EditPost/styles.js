@@ -15,7 +15,7 @@ export const EditPostContainer = styled.main`
 
   form {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     background: #fff;
     border: 1px solid #ddd;
     border-top: 0;
