@@ -3,11 +3,13 @@
 <p align="center">Instagram clone with backend, frontend and mobile using Node.js, React and React Native</p>
 
 <p align="center">
-    <img alt="Sign In" src="./src/assets/signin.png">
-    <img alt="Sign Up" src="./src/assets/signup.png">
+  <img alt="Sign In" src="./src/assets/signin.png">
 </p>
 <p align="center">
-    <img alt="Feed" src="./src/assets/feed.png">
+  <img alt="Sign Up" src="./src/assets/signup.png">
+</p>
+<p align="center">
+  <img alt="Feed" src="./src/assets/feed.png">
 </p>
 
 <p align="center">
