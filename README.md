@@ -3,6 +3,14 @@
 <p align="center">Instagram clone with backend, frontend and mobile using Node.js, React and React Native</p>
 
 <p align="center">
+    <img alt="Sign In" src="./src/assets/signin.png">
+    <img alt="Sign Up" src="./src/assets/signup.png">
+</p>
+<p align="center">
+    <img alt="Feed" src="./src/assets/feed.png">
+</p>
+
+<p align="center">
   <a href="https://filipem2210-instaclone-web.herokuapp.com/" target="_blank">
     <img alt="Demo on Heroku" src="./src/assets/demo_on_heroku.png">
   </a>
