@@ -9,6 +9,9 @@
   <img alt="Sign Up" src="./src/assets/signup.png">
 </p>
 <p align="center">
+  <img alt="Profile" src="./src/assets/profile.png">
+</p>
+<p align="center">
   <img alt="Feed" src="./src/assets/feed.png">
 </p>
 
