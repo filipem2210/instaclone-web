@@ -2,6 +2,12 @@
 
 <p align="center">Instagram clone with backend, frontend and mobile using Node.js, React and React Native</p>
 
+<p align="center">
+  <a href="https://filipem2210-instaclone-web.herokuapp.com/" target="_blank">
+    <img alt="Demo on Heroku" src="./src/assets/demo_on_heroku.png">
+  </a>
+</p>
+
 ## :computer: Technologies
 
 * [ReactJS](https://reactjs.org/)
