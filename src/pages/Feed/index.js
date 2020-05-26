@@ -109,7 +109,7 @@ export default function Feed() {
               </div>
             </PostHeader>
 
-            <img src={`${process.env.REACT_APP_API_URL}/static/images/post/${post.image}`} alt="Imagem" />
+            <img src={`${process.env.REACT_APP_API_URL}/static/images/post/${post.image}`} loading="lazy" alt="Imagem" />
 
             <PostFooter>
               <div className="actions">
