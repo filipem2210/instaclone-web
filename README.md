@@ -26,7 +26,6 @@
 * [ReactJS](https://reactjs.org/)
 * [Axios](https://www.npmjs.com/package/axios)
 * [Formik](https://www.npmjs.com/package/formik)
-* [Google Analytics](https://analytics.google.com/analytics/web/)
 * [React Icons](https://www.npmjs.com/package/react-icons)
 * [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 * [React Toastify](https://www.npmjs.com/package/react-toastify)
@@ -60,4 +59,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/fili
 ## :mortar_board: Author
 
 | [<img src="https://avatars0.githubusercontent.com/u/47154367?s=115&u=193d66853bbf18dc0536b05ad10740931fa68642&v=4"><br><sub>@filipem2210</sub>](https://github.com/filipem2210) |
-| :---: |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
